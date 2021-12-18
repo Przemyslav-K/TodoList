@@ -15,7 +15,7 @@ function TodoForm(props) {
   return (
     <form onSubmit={onSubmit}>
       <TextField name="task" />
-      <Button>Submit</Button>
+      <Button type="submit">Submit</Button>
     </form>
   );
 } 

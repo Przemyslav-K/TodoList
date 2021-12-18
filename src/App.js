@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typography } from '@material-ui/core';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import './App.css';
@@ -35,6 +36,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Typography variant="h1">
+          Todo List
+        </Typography>
         <TodoForm createTodo={this.createTodo} />
         <TodoList todos={this.state.todos} removeTodo={this.removeTodo} />
       </div>
